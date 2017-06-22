@@ -10,6 +10,16 @@ This is a small project built in **Python 2.7.10** that is meant to display _my 
 ## External Docs & Additional Information
 * New users to **Python 2.7.10** should consult the **Python Standard Library** for additional information which can be found [here](https://www.python.org/).
 
+## Running the Webpage
+1. From IDLE
+	* Open the file **entertainment_center.py** and run the program from Python
+2. From the Command Line
+	* Navigate to the working directory where you have cloned the project:
+	```
+	cd ~/WorkingDirectory/ 
+	bash:$ python entertainment_center.py
+	```
+
 ## Issues & Future Functionality
 1. The Parent Class is defined as `Video()` inside of the `media` module. The `Video()` Class is defined to support **TV Shows** in the future as only the `Movie()` Class  has been implemented. I expect to have this additional feature implemented soon.
 2. Another feature I would like to add is a **Star Rating** to let visitors to the site rate the trailers that I like.
