@@ -2,13 +2,22 @@ import webbrowser
 
 # Parent Class for all Videos
 class Video():
+    """
+    This class is the parent class that provides common attributes
+    and methods for Objects instantiated from the Movie() class
+    and the future TV Shows Class
+    """
     # Constructor - Commonalities of all video types
     def __init__(self, title, storyline, poster_image, trailer_youtube):
         self.title = title
         self.storyline = storyline
         self.poster_image_url = poster_image
         self.trailer_youtube_url = trailer_youtube
-
+        
+    """
+    The show_trailer() method uses the webbrowser module to open
+    a browser window to show a trailer
+    """
     # Parent Class Methods
     def show_trailer(self):
         # Method uses webbrowser module to open a web browser
@@ -18,10 +27,12 @@ class Video():
 # Child Class of Video - Movie()
 class Movie(Video):
     # Class Decription & Documentation
-    """This class provides a way to store movie related information"""
+    """
+    This class provides a way to store movie related information.
     
-    # Static (Class) Variables
-    # Constant array (Constants in Caps)
+    Static (Class) Variables
+    Constant array (Constants in Caps)
+    """
     VALID_RATINGS = ["G", "PG", "PG-13", "R"]
     
     # Constructor
